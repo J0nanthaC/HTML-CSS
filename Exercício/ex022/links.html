@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes e Pseudo Elementos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #49a63292;
+        }
+        h1{text-align: center;
+        color: #5755F2;}
+        a{
+            color: #201E50;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 2em;
+         }
+         a:visited{
+            color: #EE4266;
+         }
+        a:hover{
+            text-decoration: underline;
+            color: #52FFB8;
+        }
+        a:active{
+            color: #E7E7E7;
+        }
+        h1:hover{
+            color:#F4E285;
+            background-image: linear-gradient(to left, #201E50, #A2C3A4);
+            }
+        
+        
+        
+        .especial::after{
+            content: '↔';
+            }
+        .especial::before{
+            content: '↔';
+    
+        }
+        p
+        {
+            color: #E4572E;
+            font-size: 2em;
+            text-align: center;
+            
+        }
+        p:hover{
+            color: black;
+            text-align: left;
+        }
+        p::after{
+            content: '☜';
+        
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>Fazer Log-in com</h1>
+    <ul>
+        <li><a href="https://youtube.com" target="_blank"> YouTube </a></li>
+        <li> <a href="https://www.instagram.com/" target="_blank" class="especial"> Instagram </a></li>
+        <li><a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank"> GMail </a></li>
+
+
+    </ul>
+    <h1>Contatos</h1>
+
+    <p>WhatsApp (85)9.9999-9999</p>
+    <p>Instagram @olámundo</p>
+    <P>E-mail olamudo123@gmail.com</P>
+</body>
+</html>
